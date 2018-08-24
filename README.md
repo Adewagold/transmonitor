@@ -39,7 +39,7 @@ You can publish the configuration file using this command:
 php artisan vendor:publish --provider="Unicodeveloper\Paystack\PaystackServiceProvider"
 ```
 
-Check for the file `transfast.php` in your `config` package directory and add your merchant key:
+Check for the file `transfast.php` in your `package` directory and add your merchant key:
 
 ```php
 <?php
