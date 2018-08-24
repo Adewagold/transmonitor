@@ -31,6 +31,29 @@ remember that you will need to include vendor/autoload e.g
 ```
 require_once 'path_to_vendor/autoload.php';
 ```
+## Configuration
 
+You can publish the configuration file using this command:
+
+```bash
+php artisan vendor:publish --provider="Unicodeveloper\Paystack\PaystackServiceProvider"
+```
+
+Check for the file `transfast.php` in your `config` package directory and add your merchant key:
+
+```php
+<?php
+
+return [
+
+     /**
+    * Transfast Merchant Id
+    * @return string $url
+    */
+    public static $merchantId ='1234567890';
+    
+
+];
+```
 ### Get Started
 Examples on how to get started will be added soon.
